@@ -4,9 +4,9 @@ const textarea2 = document.getElementById('secondaryCode');
 const compareButton = document.getElementById('compare-button');
 
 // Add event listener to compare button
-compareButton.addEventListener('click', compareTextareas);
+compareButton.onclick = compareTextareas;
 
-function compareTextareas() {
+function compareTextareas(e) {
     compareStrings(textarea1.value, textarea2.value);
 }
 
